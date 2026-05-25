@@ -1,0 +1,7 @@
+Strategy,Cumulative Return,Annual Return,Annual Volatility,Sharpe Ratio,Max Drawdown
+Ensemble,16.5%,4.2%,11.2%,0.38,-21.7%
+PPO,24.5%,5.8%,10.4%,0.55,-18.3%
+A2C,23.7%,5.8%,12.4%,0.47,-21.9%
+DDPG,29.5%,6.9%,12.1%,0.57,-20.1%
+DJIA,39.2%,10.1%,20.0%,0.51,-37.1%
+Min-Var,69.4%,14.4%,16.0%,0.90,-25.3%
