@@ -6,7 +6,7 @@ Empirical Replication:
 
 Simplifications vs. the paper:
   - Agents trained ONCE on 2009-2015; the paper retrains every quarter.
-  - 100-150 k timesteps per agent (paper uses longer training).
+  - 150 k timesteps for PPO/A2C, 80 k for DDPG (paper uses longer training).
   - Technical indicators use the `ta` library (identical formulae).
   - Turbulence uses a fixed 252-day rolling window Mahalanobis distance.
 """
@@ -44,7 +44,7 @@ TRANSACTION_COST_PCT = 0.001        # 0.1 %
 HMAX                 = 100          # max shares per single stock action
 TURBULENCE_THRESHOLD = 140
 
-TRAIN_STEPS = {"PPO": 500_000, "A2C": 500_000, "DDPG": 200_000}
+TRAIN_STEPS = {"PPO": 150_000, "A2C": 150_000, "DDPG": 80_000}
 OUTPUT_DIR  = "outputs"
 
 os.makedirs(OUTPUT_DIR, exist_ok=True)
